@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(45deg, #e8e8e8, #bfc1c4);
+}
+
+.wrapper{
+
+    .display{
+        background-color: #f7f6f9;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        margin: 40px auto;
+        border-radius: 8px;
+        max-width: 500px;
+        padding: 20px;
+
+    }
+}

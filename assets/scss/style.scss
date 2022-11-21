@@ -6,6 +6,14 @@
     padding: 0;
 }
 
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
 body{
     background: linear-gradient(45deg, #e8e8e8, #bfc1c4);
 }
@@ -18,18 +26,19 @@ body{
         margin: 40px auto;
         border-radius: 8px;
         max-width: 500px;
-        padding: 20px;
+        max-height: 800px;
+        padding: 20px 36px;
 
         .head{
             display: flex;
-            margin-bottom: 200px;
+            margin-bottom: 60px;
 
             .logo{
                 background-color: #1a1a1a;
                 color: white;
                 position: relative;
-                width: 50px;
-                height: 50px;
+                width: 60px;
+                height: 60px;
                 border-radius: 50%;
 
                 .fa-feather{
@@ -46,7 +55,7 @@ body{
                 align-items: center;
                 display: flex;
                 margin-left: auto;
-                border-radius: 14px;
+                border-radius: 18px;
                 padding: 10px 14px;
 
                 p{
@@ -60,5 +69,72 @@ body{
                 }
             }
         }
+
+        .cataloge{
+            .title{
+                margin-bottom: 10px;
+    
+                h3{
+                    font-weight: 400;
+                    font-size: 28px;
+    
+                    b{
+                        font-size: 200;
+                    }
+                }
+            }
+
+            .page__selector{
+                display: flex;
+                gap: 10px;
+
+                .active__link{
+                    background-color: #1a1a1a;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 20px;
+                    border-radius: 30px;
+                    text-decoration: none;
+
+                    p{
+                        margin-left: 6px;
+                    }
+                }
+
+                .active__link:hover{
+                    background-color: #3a3a3a;
+                }
+
+                .desable__link{
+                    background-color: white;
+                    color:#1a1a1a;
+                    width: 50px;
+                    border-radius: 50%;
+
+                    span{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    p{
+                        display: none;
+                    }
+                }
+
+                .link__page{
+                    position: relative;
+                    height: 50px;
+                    transition: .4s all;
+                }
+
+                .link__page:hover{
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                }
+            }
+        }
+
     }
 }
